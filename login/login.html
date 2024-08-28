@@ -1,0 +1,102 @@
+ <!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container-form">
+            <form id="loginForm">
+                <img class="logo" src="../assets/ncrtc.png" alt="ncrtc home">
+                <h1>Login</h1>
+                <p>Please sign in to continue.</p>
+                <div class="inputBox">
+                    <i class="icon user"></i>
+                    <input type="text" name="userID" id="userid" placeholder="User ID" required>
+                </div>
+                <span id="userIDError" class="error"></span>
+                <div class="inputBox">
+                    <i class="icon password"></i>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+                <span id="passwordError" class="error"></span>
+                <div class="divBtn">
+                    <small class="FG">Forgot Password?</small>
+                    <button type="submit" class="loginBtn" onclick="sendSignInRequest();">LOGIN</button>
+                </div>
+                <span id="error-message" class="error"></span>
+            </form>
+            <div class="dont">
+                <p>Don't have an account? <a href="/signup"><span>Sign up</span></a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+        async function login() {
+            const url = 'https://ncrtc.in/fcgi/MobileAction'; 
+            const userId = document.getElementById('userid').value;
+            const password = document.getElementById('password').value;
+
+            const data = {
+                cmd: 'SignIn',
+                userid: userId,
+                password: password
+            };
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const result = await response.json();
+                if (result.error) {
+                    alert(result.error);
+                } else {
+                    console.log(result);
+                    // Process the result as needed
+                    alert('Login successful!');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Login failed!');
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); login();">
+        <label for="userid">User ID:</label>
+        <input type="text" id="userid" name="userid" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html> -->
+
+
+Total Count of complaints, pending and closed
+SOS

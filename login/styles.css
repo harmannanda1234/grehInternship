@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logoncrtc {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    color: #666;
+}
+
+.inputBox {
+    position: relative;
+    margin: 20px 0;
+}
+
+.inputBox input {
+    width: 60%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.inputBox .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mail:before {
+    content: "\2709";
+    font-size: 1.5em;
+}
+
+.password:before {
+    content: "\1F512";
+    font-size: 1.5em;
+}
+.logo{
+    height: 3rem;
+    width: fit-content;
+}
+.error {
+    color: red;
+    display: block;
+    margin-top: 5px;
+}
+
+.passbg {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.divBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FG {
+    color: #0073b1;
+    cursor: pointer;
+}
+
+.loginBtn {
+    background-color: #0073b1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.loginBtn:hover {
+    background-color: #005582;
+}
+
+.dont {
+    margin-top: 20px;
+}
+
+.dont a {
+    color: #0073b1;
+    text-decoration: none;
+}
+
+.dont a:hover {
+    text-decoration: underline;
+}

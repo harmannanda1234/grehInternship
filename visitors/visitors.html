@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="mainstyle.css">
+    <title>Recent Visitors</title>
+    <style>
+        body {
+            background-color: #fff;
+        }
+
+        .visitor-card {
+            background-color: #f8f9fa;
+            border-left: 5px solid #dc3545;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .visitor-title {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .visitor-info {
+            color: #333;
+        }
+
+        h2 {
+            color: #dc3545;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <a class="navbar-brand" href="#">  <img class="logo" src="../assets/ncrtc.png" width="100px" height="50px"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../mainindex.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../complaints/complaints.html">Complaints</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../visitors/visitors.html">Visitors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../suggestions/suggestions.html">Suggestions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../login/login.html">Logout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+    <div class="container">
+        <!-- Recent Visitors Section -->
+        <h2>Recent Visitors</h2>
+        
+        <!-- Visitor 1 -->
+        <div class="visitor-card">
+            <div class="visitor-title">Visitor 1: John Doe</div>
+            <div class="visitor-info">
+                Visited on: 2024-07-31<br>
+                Purpose: Enjoyed the visit!
+            </div>
+        </div>
+
+        <!-- Visitor 2 -->
+        <div class="visitor-card">
+            <div class="visitor-title">Visitor 2: Jane Smith</div>
+            <div class="visitor-info">
+                Visited on: 2024-08-01<br>
+                Purpose: Loved the environment!
+            </div>
+        </div>
+
+        <!-- Visitor 3 -->
+        <div class="visitor-card">
+            <div class="visitor-title">Visitor 3: Emily Johnson</div>
+            <div class="visitor-info">
+                Visited on: 2024-08-01<br>
+                Purpose: Very informative tour.
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.11/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<!-- <body>
+    <a href="/index.html"><img class="logo" src="/assets/ncrtc.png" alt=""></a>
+    <h1>Recent Visitors</h1>
+    <div class="visitor">
+        <img src="visitor1.jpg" alt="Visitor 1">
+        <div class="visitor-info">
+            <h2>John Doe</h2>
+            <p>Visited on: 2024-07-31</p>
+            <p>     Purpose: Enjoyed the visit!</p>
+        </div>
+    </div>
+    <div class="visitor">
+        <img src="visitor2.jpg" alt="Visitor 2">
+        <div class="visitor-info">
+            <h2>Jane Smith</h2>
+            <p>Visited on: 2024-08-01</p>
+            <p>     Purpose: Loved the environment!</p>
+        </div>
+    </div>
+    <div class="visitor">
+        <img src="visitor3.jpg" alt="Visitor 3">
+        <div class="visitor-info">
+            <h2>Emily Johnson</h2>
+            <p>Visited on: 2024-08-01</p>
+            <p>     Purpose: Very informative tour.</p>
+        </div>     
+
+    </div>
+</body> -->
+</html>
